@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+	function nextpage()
+		{
+			var firstname=document.getElementById("txt").value;
+			localStorage.setItem("textvalue",firstname);
+			var lastName =document.getElementById("txt1").value;
+			localStorage.setItem("textvaluea",lastName);
+			var RollNo =document.getElementById("txt2").value;
+			localStorage.setItem("textvalueb",RollNo);
+			var Class =document.getElementById("txt3").value;
+			localStorage.setItem("textvaluec",Class);
+			var Department =document.getElementById("txt4").value; 
+			localStorage.setItem("textvalued",Department);
+			return false;
+		}
+</script>
+</head>
+<body>
+<center>
+<h1>User Registration Details
+</h1>
+<hr/>
+<form action=output.html>
+	<input type ="text" id="txt">
+	<input type ="text" id="txt1">
+	<input type ="text" id="txt2">
+	<input type ="text" id="txt3">
+	<input type ="text" id="txt4">
+	<input type ="submit" value="Submit User Data" onclick="nextpage();"/>
+</form>
+</center>
+</body>
+</html>
